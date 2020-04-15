@@ -1,0 +1,12 @@
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/bin/Debug/netcoreapp3.1/T1907M_NXH.deps.json
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/bin/Debug/netcoreapp3.1/T1907M_NXH.runtimeconfig.json
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/bin/Debug/netcoreapp3.1/T1907M_NXH.runtimeconfig.dev.json
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/bin/Debug/netcoreapp3.1/T1907M_NXH.dll
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/bin/Debug/netcoreapp3.1/T1907M_NXH.pdb
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/obj/Debug/netcoreapp3.1/T1907M_NXH.csprojAssemblyReference.cache
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/obj/Debug/netcoreapp3.1/T1907M_NXH.csproj.CoreCompileInputs.cache
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/obj/Debug/netcoreapp3.1/T1907M_NXH.AssemblyInfoInputs.cache
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/obj/Debug/netcoreapp3.1/T1907M_NXH.AssemblyInfo.cs
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/obj/Debug/netcoreapp3.1/T1907M_NXH.dll
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/obj/Debug/netcoreapp3.1/T1907M_NXH.pdb
+/Users/HuyLo/Desktop/T1907M_NXH/T1907M_NXH/obj/Debug/netcoreapp3.1/T1907M_NXH.genruntimeconfig.cache

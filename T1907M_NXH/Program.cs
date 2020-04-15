@@ -9,6 +9,7 @@ namespace T1907M_NXH //package
     class Program
     {
         static void Main(string[] args)
+        
         {
             // Console.WriteLine("Hello World!"); //print
             // string str;
@@ -82,7 +83,7 @@ namespace T1907M_NXH //package
                 f2 = f1;
                 f1 = f;
             }
-            Console.WriteLine("Number =" + n + " Fibonacci = " +f);
+            Console.WriteLine("Number = " + n + " => Fibonacci = " +f);
         }
     }
 }
