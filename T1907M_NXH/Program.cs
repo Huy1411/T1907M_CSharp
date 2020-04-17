@@ -16,7 +16,12 @@ namespace T1907M_NXH //package
             // str = Console.ReadLine();
             
             // TotalNumber();
-            Fibonacci();
+            dynamic x; // kieu du lieu dong
+            x = 20;
+            Console.WriteLine(x+15);
+            x = "Hello";
+            Console.WriteLine(x+15);
+            // Fibonacci();
         }
 
         static void TotalNumber()
@@ -73,7 +78,7 @@ namespace T1907M_NXH //package
         static void Fibonacci()
         {
             int n;
-            Console.WriteLine("Moi nhap so n = ");
+            Console.WriteLine("Nhap so n = ");
             n = Convert.ToInt32(Console.ReadLine());
             int f = 0;
             int f1 = 1, f2 = 1 ;
