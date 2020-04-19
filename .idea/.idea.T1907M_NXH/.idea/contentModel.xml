@@ -5,6 +5,13 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="T1907M_NXH" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Lab1" t="Include">
+          <e p="Fibonacci.cs" t="Include" />
+        </e>
+        <e p="Lab2" t="Include">
+          <e p="Product.cs" t="Include" />
+          <e p="ProductMain.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -13,6 +20,11 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Session2" t="Include">
+          <e p="Session2.cs" t="Include" />
+          <e p="Social.cs" t="Include" />
+          <e p="Student.cs" t="Include" />
+        </e>
         <e p="T1907M_NXH.csproj" t="IncludeRecursive" />
       </e>
       <e p="T1907M_NXH.sln" t="IncludeFlat" />
