@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace T1907M_NXH.Lab2
 {
@@ -10,13 +11,13 @@ namespace T1907M_NXH.Lab2
         public int qty;
         public String image;
         public String desc;
-        public Array gallery;
+        public List<String> gallery;
 
         public Product()
         {
         }
 
-        public Product(int id, string name, int price, int qty, string image, string desc, Array gallery)
+        public Product(int id, string name, int price, int qty, string image, string desc)
         {
             this.id = id;
             this.name = name;
@@ -24,19 +25,18 @@ namespace T1907M_NXH.Lab2
             this.qty = qty;
             this.image = image;
             this.desc = desc;
-            this.gallery = gallery;
         }
 
         public void getInfo()
         {
-            Console.WriteLine("ID " +id+ " - Name: " +name+ " - Price: " +price+ " - Qty: " +qty+ " - Desc: " +desc+ " - Gallery: " +gallery);
+            Console.WriteLine("ID:" +id+ " - Name: " +name+ " - Price: " +price+ " - Qty: " +qty+ " - Desc: " +desc);
         }
 
-        public void check()
+        public void checkInfo()
         {
             if (qty > 0)
             {
-                Console.WriteLine("ID: " +id+ " - Name: "+name+"=> còm hàng");
+                Console.WriteLine("ID: " +id+ " - Name: "+name+" => còn hàng");
             }
             else
             {
@@ -45,6 +45,17 @@ namespace T1907M_NXH.Lab2
         }
 
         public void addImg()
+        {
+            
+            List<String> gallery = new List<string>();
+            gallery.Add("");
+            foreach (String g in gallery)
+            {
+                Console.WriteLine(g);
+            }
+        }
+
+        public void deleteImg()
         {
             
         }
