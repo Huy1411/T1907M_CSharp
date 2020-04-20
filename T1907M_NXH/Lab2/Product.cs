@@ -11,7 +11,8 @@ namespace T1907M_NXH.Lab2
         public int qty;
         public String image;
         public String desc;
-        public List<String> gallery;
+        private List<string> gallery = new List<string>();
+        public List<Product> productList = new List<Product>();
 
         public Product()
         {
@@ -27,38 +28,102 @@ namespace T1907M_NXH.Lab2
             this.desc = desc;
         }
 
-        public void getInfo()
+        public void GetInfo()
         {
-            Console.WriteLine("ID:" +id+ " - Name: " +name+ " - Price: " +price+ " - Qty: " +qty+ " - Desc: " +desc);
+            foreach (Product p in productList)
+            {
+                Console.WriteLine("ID:" + id + " - Name: " + name + " - Price: " + price + " - Qty: " + qty +
+                                  " - Desc: " + desc);
+            }
+        }
+        public void AddProduct(Product product)
+        {
+            Console.WriteLine("Enter id: ");
+            id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter name: ");
+            name = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter price: ");
+            price = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter qty: ");
+            qty = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter image: ");
+            image = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter desc: ");
+            desc = Convert.ToString(Console.ReadLine());
+            productList.Add(new Product(id, name, price, qty, image, desc));
+            Console.WriteLine("Them san pham thanh cong");
         }
 
-        public void checkInfo()
+        public void CheckStock()
         {
-            if (qty > 0)
+            string name;
+            Console.WriteLine("San pham can tim: ");
+            name = Convert.ToString(Console.ReadLine());
+            foreach (Product p in productList)
             {
-                Console.WriteLine("ID: " +id+ " - Name: "+name+" => còn hàng");
+                if (name.Equals(p.name))
+                {
+                    if (p.qty > 0)
+                    {
+                        Console.WriteLine("Con hang");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Het hang");
+                    }
+                }
+            }
+        }
+
+        public void AddImage()
+        {
+            if (gallery.Count < 10)
+            {
+                foreach (Product p in productList)
+                {
+                    gallery.Add(p.image);
+                }
+                Console.WriteLine("Them thanh cong vao ");
+                Console.WriteLine("List gallery: ");
+                foreach (String img  in gallery)
+                {
+                    Console.WriteLine(img);
+                }
             }
             else
             {
-                Console.WriteLine("ID: " +id+ " - Name: "+name+ "=> hết hàng");
+                Console.WriteLine("Vuot qua so luong them");
             }
+            
         }
 
-        public void addImg()
+        public void RemoveImage()
         {
-            
-            List<String> gallery = new List<string>();
-            gallery.Add("");
-            foreach (String g in gallery)
+            Console.WriteLine("Danh sach anh: ");
+            for (int i = 0; i < gallery.Count; i++)
             {
-                Console.WriteLine(g);
+                Console.WriteLine("STT: " + (i+1) + "\n IMG: " + gallery[i]);
             }
-        }
 
-        public void deleteImg()
-        {
-            
+            int index;
+            Console.WriteLine("Nhap vi tri muon xoa: ");
+            index = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < gallery.Count; i++)
+            {
+                if (i == index)
+                {
+                    gallery.RemoveAt(index - 1);
+                    Console.WriteLine("Xoa thanh cong!");
+                    Console.WriteLine("Gallery list: ");
+                    foreach (string img in gallery)
+                    {
+                        Console.WriteLine(img);
+                    }
+                }
+            }
+
         }
+        
     }
     
 }

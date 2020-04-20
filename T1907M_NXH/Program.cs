@@ -38,6 +38,30 @@ namespace T1907M_NXH //package
             }
 
             numberTwo = numberOne > 2 ? 2 : 1;
+            
+            bool x = numberOne > numberTwo;
+            if (numberOne > numberTwo)
+            {
+                
+            }
+
+            if (x)
+            {
+                
+            }else if (!x)
+            {
+                
+            }
+            else
+            {
+                
+            }
+
+            switch (x)
+            {
+                case  true: break;
+                case false: break;
+            }
 
             int[] arr = {1, 2, 3, 4};
             for (int i = 0; i < 3; i++)
