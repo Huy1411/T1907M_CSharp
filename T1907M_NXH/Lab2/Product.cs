@@ -36,6 +36,7 @@ namespace T1907M_NXH.Lab2
                                   " - Desc: " + desc);
             }
         }
+
         public void AddProduct(Product product)
         {
             Console.WriteLine("Enter id: ");
@@ -83,9 +84,10 @@ namespace T1907M_NXH.Lab2
                 {
                     gallery.Add(p.image);
                 }
+
                 Console.WriteLine("Them thanh cong vao ");
                 Console.WriteLine("List gallery: ");
-                foreach (String img  in gallery)
+                foreach (String img in gallery)
                 {
                     Console.WriteLine(img);
                 }
@@ -94,7 +96,6 @@ namespace T1907M_NXH.Lab2
             {
                 Console.WriteLine("Vuot qua so luong them");
             }
-            
         }
 
         public void RemoveImage()
@@ -102,7 +103,7 @@ namespace T1907M_NXH.Lab2
             Console.WriteLine("Danh sach anh: ");
             for (int i = 0; i < gallery.Count; i++)
             {
-                Console.WriteLine("STT: " + (i+1) + "\n IMG: " + gallery[i]);
+                Console.WriteLine("STT: " + (i + 1) + "\n IMG: " + gallery[i]);
             }
 
             int index;
@@ -121,9 +122,8 @@ namespace T1907M_NXH.Lab2
                     }
                 }
             }
-
         }
-        
+
+       
     }
-    
 }
