@@ -4,11 +4,11 @@ namespace T1907M_NXH.Lab1
 {
     public class Fibonacci
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Fibonaccii();
+            Fibonacci();
         }
-        static void Fibonacci()
+        public static void Fibonacci()
         {
             int n;
             Console.WriteLine("Nhap so n = ");
